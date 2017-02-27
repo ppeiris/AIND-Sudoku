@@ -3,11 +3,11 @@
 
 # Question 1 (Naked Twins)
 Q: How do we use constraint propagation to solve the naked twins problem?  
-A: *Student should provide answer here*
+A: First perform a quick row-wise search to see if there any twins are presents. If there is a twin in given row, the values are eliminated from its row peers (when peers have more than one choice). This process continue to apply to each and every row to eliminate some of the possible values. Once the all the rows are processed this method applied to columns. 
 
 # Question 2 (Diagonal Sudoku)
 Q: How do we use constraint propagation to solve the diagonal sudoku problem?  
-A: *Student should provide answer here*
+A: In diagonal sudoku problem, I add the diagonal boxes into the peer group for given box. Once we are looking in to eliminate the values from its peers, the values get eliminate from the diagonal peers. Adding the diagonal peers to units group allow the constraints to propagate to diagonal boxes.
 
 ### Install
 
